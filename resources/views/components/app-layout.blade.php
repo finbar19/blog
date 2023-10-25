@@ -10,11 +10,16 @@
   @vite('resources/css/app.css')
 </head>
 <body>
-<div class="container mx-auto py-10">
+  <div class="container mx-auto py-10">
       <h1 class="text-3xl font-bold">
         My Personal Blog
       </h1>
-{{ $slot }}
+    {{ $slot }}
+
+    <x-app-subscribe/>
+
   </div>
+
+  <x-app-footer/>
 </body>
 </html>
